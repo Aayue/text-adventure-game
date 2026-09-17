@@ -1,0 +1,6 @@
+{
+  "name": "Cyber Dungeon Protocol",
+  "description": "A cyberpunk dark-themed interactive text adventure game featuring typewriter narration, combat engine, inventory system, and neon HUD animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

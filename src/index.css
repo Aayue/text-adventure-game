@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Cyberpunk Glowing Shadows */
+  .shadow-neon-cyan {
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.4), 0 0 30px rgba(6, 182, 212, 0.2);
+  }
+  .shadow-neon-pink {
+    box-shadow: 0 0 15px rgba(236, 72, 153, 0.4), 0 0 30px rgba(236, 72, 153, 0.2);
+  }
+  .shadow-neon-amber {
+    box-shadow: 0 0 15px rgba(245, 158, 11, 0.4), 0 0 30px rgba(245, 158, 11, 0.2);
+  }
+  .shadow-neon-emerald {
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.4), 0 0 30px rgba(16, 185, 129, 0.2);
+  }
+  .text-glow-cyan {
+    text-shadow: 0 0 8px rgba(34, 211, 238, 0.8), 0 0 18px rgba(34, 211, 238, 0.4);
+  }
+  .text-glow-pink {
+    text-shadow: 0 0 8px rgba(244, 114, 182, 0.8), 0 0 18px rgba(244, 114, 182, 0.4);
+  }
+  .text-glow-amber {
+    text-shadow: 0 0 8px rgba(251, 191, 36, 0.8), 0 0 18px rgba(251, 191, 36, 0.4);
+  }
+  
+  /* Cyberpunk cut corner */
+  .clip-cyber-corner {
+    clip-path: polygon(
+      0 0,
+      calc(100% - 14px) 0,
+      100% 14px,
+      100% 100%,
+      14px 100%,
+      0 calc(100% - 14px)
+    );
+  }
+  .clip-cyber-tag {
+    clip-path: polygon(
+      0 0,
+      calc(100% - 8px) 0,
+      100% 8px,
+      100% 100%,
+      8px 100%,
+      0 calc(100% - 8px)
+    );
+  }
+}
+
+/* Scanline and CRT aesthetics */
+.scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.03)
+  );
+  background-size: 100% 3px, 6px 100%;
+}
+
+/* Custom cyber scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+::-webkit-scrollbar-thumb {
+  background: #0ea5e9;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
+
+/* Font helpers */
+.font-cyber {
+  font-family: 'Orbitron', 'Chakra Petch', monospace, sans-serif;
+}
+.font-tech {
+  font-family: 'Chakra Petch', sans-serif;
+}
+.font-mono-term {
+  font-family: 'JetBrains Mono', monospace;
+}
